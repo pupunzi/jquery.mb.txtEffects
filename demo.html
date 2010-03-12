@@ -1,0 +1,88 @@
+<!doctype html>
+<!--
+  ~ jquery.mb.components
+  ~ Copyright (c) 2001-2010. Matteo Bicocchi (Pupunzi); Open lab srl, Firenze - Italy
+  ~ email: info@pupunzi.com
+  ~ site: http://pupunzi.com
+  ~
+  ~ Licences: MIT, GPL
+  ~ http://www.opensource.org/licenses/mit-license.php
+  ~ http://www.gnu.org/licenses/gpl.html
+  -->
+
+<html>
+<head>
+  <title>mbTEff</title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js
+"></script>
+  <script type="text/javascript" src="inc/mbTextEffects.js"></script>
+  <style type="text/css">
+    .demo {
+      line-height:40px;
+      font-family:sans-serif;
+      font-size:30px;
+      width:300px;
+      float:left;
+      /*text-shadow:yellow 1px 1px 12px;*/
+    }
+    .cursor{
+      display:inline-block;
+      width:20px;
+      height:23px;
+      background-color:#ccc;
+      margin-left:10px;
+      color:darkgray;
+    }
+  </style>
+  <script type="text/javascript">
+    $(function(){
+
+ //     $(".demo").mbTEF_typewriter({timer:[10,140]});
+      $("#1").mbTEF_transform({
+        timer:[20,40], // or [40]
+        startStyle:{color:"random", opacity:0},
+        endStyle:{opacity:1},
+        fadeTime: 1000, //Math.floor(Math.random()*1000)
+        split:" "
+      });
+      $("#2").mbTEF_transform({
+        timer:[100], // or [40]
+        startStyle:{opacity:.0},
+        endStyle:{opacity:.4},
+        fadeTime: 1000, //Math.floor(Math.random()*1000)
+        split:" "
+      });
+      $("#3").mbTEF_transform({
+        timer:[50,30], // or [40]
+        startStyle:{opacity:.0},
+        endStyle:{opacity:"random"},
+        fadeTime: 1000, //Math.floor(Math.random()*1000)
+        split:" "
+      });
+    });
+
+
+  </script>
+</head>
+<body>
+
+<div class="demo" id="1">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span>Fusce imperdiet.</span> Sed quis ipsum vitae tellus faucibus accumsan. Nulla leo. Quisque bibendum dapibus lorem. Praesent a metus id eros tempor adipiscing. Nulla odio. Integer aliquet quam. Vestibulum luctus quam eu massa. Vestibulum tincidunt dolor eget orci. Curabitur sem tellus, luctus at, tincidunt vitae, malesuada sit amet, lorem. Duis accumsan urna vitae neque. In hac habitasse platea dictumst. Praesent ligula dolor, tincidunt nec, scelerisque ut, gravida et, nisl.Donec ac lacus. Fusce velit ligula, bibendum convallis, condimentum quis, consectetur vel, turpis.
+</div>
+<div class="demo" id="2">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span>Fusce imperdiet.</span> Sed quis ipsum vitae tellus faucibus accumsan. Nulla leo. Quisque bibendum dapibus lorem. Praesent a metus id eros tempor adipiscing. Nulla odio. Integer aliquet quam. Vestibulum luctus quam eu massa. Vestibulum tincidunt dolor eget orci. Curabitur sem tellus, luctus at, tincidunt vitae, malesuada sit amet, lorem. Duis accumsan urna vitae neque. In hac habitasse platea dictumst. Praesent ligula dolor, tincidunt nec, scelerisque ut, gravida et, nisl.Donec ac lacus. Fusce velit ligula, bibendum convallis, condimentum quis, consectetur vel, turpis.
+</div>
+<div class="demo" id="3">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span>Fusce imperdiet.</span> Sed quis ipsum vitae tellus faucibus accumsan. Nulla leo. Quisque bibendum dapibus lorem. Praesent a metus id eros tempor adipiscing. Nulla odio. Integer aliquet quam. Vestibulum luctus quam eu massa. Vestibulum tincidunt dolor eget orci. Curabitur sem tellus, luctus at, tincidunt vitae, malesuada sit amet, lorem. Duis accumsan urna vitae neque. In hac habitasse platea dictumst. Praesent ligula dolor, tincidunt nec, scelerisque ut, gravida et, nisl.Donec ac lacus. Fusce velit ligula, bibendum convallis, condimentum quis, consectetur vel, turpis.
+</div>
+<div class="demo">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span>Fusce imperdiet.</span> Sed quis ipsum vitae tellus faucibus accumsan. Nulla leo. Quisque bibendum dapibus lorem. Praesent a metus id eros tempor adipiscing. Nulla odio. Integer aliquet quam. Vestibulum luctus quam eu massa. Vestibulum tincidunt dolor eget orci. Curabitur sem tellus, luctus at, tincidunt vitae, malesuada sit amet, lorem. Duis accumsan urna vitae neque. In hac habitasse platea dictumst. Praesent ligula dolor, tincidunt nec, scelerisque ut, gravida et, nisl.Donec ac lacus. Fusce velit ligula, bibendum convallis, condimentum quis, consectetur vel, turpis.
+</div>
+<div class="demo">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span>Fusce imperdiet.</span> Sed quis ipsum vitae tellus faucibus accumsan. Nulla leo. Quisque bibendum dapibus lorem. Praesent a metus id eros tempor adipiscing. Nulla odio. Integer aliquet quam. Vestibulum luctus quam eu massa. Vestibulum tincidunt dolor eget orci. Curabitur sem tellus, luctus at, tincidunt vitae, malesuada sit amet, lorem. Duis accumsan urna vitae neque. In hac habitasse platea dictumst. Praesent ligula dolor, tincidunt nec, scelerisque ut, gravida et, nisl.Donec ac lacus. Fusce velit ligula, bibendum convallis, condimentum quis, consectetur vel, turpis.
+</div>
+<div class="demo">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span>Fusce imperdiet.</span> Sed quis ipsum vitae tellus faucibus accumsan. Nulla leo. Quisque bibendum dapibus lorem. Praesent a metus id eros tempor adipiscing. Nulla odio. Integer aliquet quam. Vestibulum luctus quam eu massa. Vestibulum tincidunt dolor eget orci. Curabitur sem tellus, luctus at, tincidunt vitae, malesuada sit amet, lorem. Duis accumsan urna vitae neque. In hac habitasse platea dictumst. Praesent ligula dolor, tincidunt nec, scelerisque ut, gravida et, nisl.Donec ac lacus. Fusce velit ligula, bibendum convallis, condimentum quis, consectetur vel, turpis.
+</div>
+</body>
+</html>
