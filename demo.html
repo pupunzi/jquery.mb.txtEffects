@@ -14,7 +14,7 @@
 <html>
 <head>
   <title>mbTEff</title>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
   <script type="text/javascript" src="inc/mbTextEffects.js"></script>
   <style type="text/css">
     .demo {
@@ -59,6 +59,20 @@
         fadeTime: 1000, //Math.floor(Math.random()*1000)
         split:" "
       });
+      $("#4").mbTEF_transform({
+        timer:[50,30],
+        startStyle:{opacity:.0},
+        endStyle:{opacity:"random", fontSize:150},
+        fadeTime: 1000, //Math.floor(Math.random()*1000)
+        split:""
+      });
+      $("#5").mbTEF_transform({
+        timer:[50,30],
+        startStyle:{opacity:.0,color:"random"},
+        endStyle:{opacity:"random", fontSize:150, color:"random"},
+        fadeTime: 1000, //Math.floor(Math.random()*1000)
+        split:""
+      });
     });
 
 
@@ -75,14 +89,16 @@
 <div class="demo" id="3">
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span>Fusce imperdiet.</span> Sed quis ipsum vitae tellus faucibus accumsan. Nulla leo. Quisque bibendum dapibus lorem. Praesent a metus id eros tempor adipiscing. Nulla odio. Integer aliquet quam. Vestibulum luctus quam eu massa. Vestibulum tincidunt dolor eget orci. Curabitur sem tellus, luctus at, tincidunt vitae, malesuada sit amet, lorem. Duis accumsan urna vitae neque. In hac habitasse platea dictumst. Praesent ligula dolor, tincidunt nec, scelerisque ut, gravida et, nisl.Donec ac lacus. Fusce velit ligula, bibendum convallis, condimentum quis, consectetur vel, turpis.
 </div>
-<div class="demo" >
+<div class="demo" id="4">
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span>Fusce imperdiet.</span> Sed quis ipsum vitae tellus faucibus accumsan. Nulla leo. Quisque bibendum dapibus lorem. Praesent a metus id eros tempor adipiscing. Nulla odio. Integer aliquet quam. Vestibulum luctus quam eu massa. Vestibulum tincidunt dolor eget orci. Curabitur sem tellus, luctus at, tincidunt vitae, malesuada sit amet, lorem. Duis accumsan urna vitae neque. In hac habitasse platea dictumst. Praesent ligula dolor, tincidunt nec, scelerisque ut, gravida et, nisl.Donec ac lacus. Fusce velit ligula, bibendum convallis, condimentum quis, consectetur vel, turpis.
 </div>
+<div class="demo" id="5">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span>Fusce imperdiet.</span> Sed quis ipsum vitae tellus faucibus accumsan. Nulla leo. Quisque bibendum dapibus lorem. Praesent a metus id eros tempor adipiscing. Nulla odio. Integer aliquet quam. Vestibulum luctus quam eu massa. Vestibulum tincidunt dolor eget orci. Curabitur sem tellus, luctus at, tincidunt vitae, malesuada sit amet, lorem. Duis accumsan urna vitae neque. In hac habitasse platea dictumst. Praesent ligula dolor, tincidunt nec, scelerisque ut, gravida et, nisl.Donec ac lacus. Fusce velit ligula, bibendum convallis, condimentum quis, consectetur vel, turpis.
+</div>
+<!--
 <div class="demo">
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span>Fusce imperdiet.</span> Sed quis ipsum vitae tellus faucibus accumsan. Nulla leo. Quisque bibendum dapibus lorem. Praesent a metus id eros tempor adipiscing. Nulla odio. Integer aliquet quam. Vestibulum luctus quam eu massa. Vestibulum tincidunt dolor eget orci. Curabitur sem tellus, luctus at, tincidunt vitae, malesuada sit amet, lorem. Duis accumsan urna vitae neque. In hac habitasse platea dictumst. Praesent ligula dolor, tincidunt nec, scelerisque ut, gravida et, nisl.Donec ac lacus. Fusce velit ligula, bibendum convallis, condimentum quis, consectetur vel, turpis.
 </div>
-<div class="demo">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span>Fusce imperdiet.</span> Sed quis ipsum vitae tellus faucibus accumsan. Nulla leo. Quisque bibendum dapibus lorem. Praesent a metus id eros tempor adipiscing. Nulla odio. Integer aliquet quam. Vestibulum luctus quam eu massa. Vestibulum tincidunt dolor eget orci. Curabitur sem tellus, luctus at, tincidunt vitae, malesuada sit amet, lorem. Duis accumsan urna vitae neque. In hac habitasse platea dictumst. Praesent ligula dolor, tincidunt nec, scelerisque ut, gravida et, nisl.Donec ac lacus. Fusce velit ligula, bibendum convallis, condimentum quis, consectetur vel, turpis.
-</div>
+-->
 </body>
 </html>
